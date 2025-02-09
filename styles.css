@@ -42,6 +42,7 @@ section {
 
 .navbar {
     width: 100%;
+    height: 40px;
     display: flex;
     justify-content: center;
     background: var(--nanbarColor);
@@ -223,19 +224,6 @@ section {
     text-transform: uppercase;
 }
 
-@media (max-width:768px) {
-    .project{
-        height: max-content;
-        flex-direction: column;
-    }
-    .imageBox img{
-        height: 100%;
-    }
-    .project-detail{
-        flex-direction: row;
-        width: 100%;
-    }
-}
 
 
 /* ---------------Contact--------------------- */
@@ -271,7 +259,7 @@ form{
 }
 
 input,textarea{
-    width: 70%;
+    width: 90%;
     height: 35px;
     padding-left: 10px;
     border-radius: 10px;
@@ -295,4 +283,23 @@ textarea{
     border: none;
     padding: 5px;
     border-radius: 10px;
+}
+
+@media (max-width:768px) {
+    .project{
+        height: max-content;
+        flex-direction: column;
+    }
+    .imageBox img{
+        height: 100%;
+    }
+    .project-detail{
+        flex-direction: row;
+        width: 100%;
+    }
+    .contactBox{
+        width: 90%;
+        height: max-content;
+        padding:30px;
+    }
 }
